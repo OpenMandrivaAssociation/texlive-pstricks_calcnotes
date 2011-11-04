@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-pstricks_calcnotes
-Version:	20111102
+Version:	20111104
 Release:	1
 Summary:	TeXLive pstricks_calcnotes package
 Group:		Publishing
@@ -43,6 +43,7 @@ TeXLive pstricks_calcnotes package.
 %doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Ps_Output/TwoApps_Ps.tex
 %doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/README
 %doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/two_apps.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,3 +54,5 @@ TeXLive pstricks_calcnotes package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
