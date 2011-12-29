@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pstricks_calcnote
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 TeXLive pstricks_calcnotes package.
@@ -43,7 +41,6 @@ TeXLive pstricks_calcnotes package.
 %doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Ps_Output/TwoApps_Ps.tex
 %doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/README
 %doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/two_apps.pdf
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,5 +51,3 @@ TeXLive pstricks_calcnotes package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
