@@ -1,12 +1,12 @@
-# revision 18816
+# revision 31821
 # category Package
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-pstricks_calcnotes
-Version:	20111104
-Release:	2
+Version:	20131010
+Release:	1
 Summary:	TeXLive pstricks_calcnotes package
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -22,9 +22,9 @@ TeXLive pstricks_calcnotes package.
 
 #-----------------------------------------------------------------------
 %files
-%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/Convert_PstricsCode_To_Pdf/Readme.txt
-%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/Convert_PstricsCode_To_Pdf/convert.tex
-%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/Convert_PstricsCode_To_Pdf/test.pdf
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/Convert_PstricksCode_To_Pdf/Readme.txt
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/Convert_PstricksCode_To_Pdf/convert.tex
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/Convert_PstricksCode_To_Pdf/test.pdf
 %doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/Fig1-1.pdf
 %doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/Fig1-2.pdf
 %doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/Fig1-3.pdf
@@ -37,10 +37,22 @@ TeXLive pstricks_calcnotes package.
 %doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/Fig7.pdf
 %doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/Fig8.pdf
 %doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/Fig9.pdf
-%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/TwoApps_Pdf.tex
-%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Ps_Output/TwoApps_Ps.tex
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/NewVecFld_PDF.tex
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/vec1.pdf
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/vec2.pdf
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/vec3.pdf
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/vec4.pdf
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/vec5.pdf
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Pdf_Output/vec6.pdf
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Ps_Output/NewVecFld_PS.tex
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Ps_Output/vec1.eps
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Ps_Output/vec2.eps
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Ps_Output/vec3.eps
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Ps_Output/vec4.eps
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Ps_Output/vec5.eps
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/For_Ps_Output/vec6.eps
 %doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/README
-%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/two_apps.pdf
+%doc %{_texmfdistdir}/doc/latex/pstricks_calcnotes/Two_Apps_Remarks.pdf
 
 #-----------------------------------------------------------------------
 %prep
@@ -51,17 +63,3 @@ TeXLive pstricks_calcnotes package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111104-2
-+ Revision: 755406
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111104-1
-+ Revision: 719386
-- texlive-pstricks_calcnotes
-- texlive-pstricks_calcnotes
-- texlive-pstricks_calcnotes
-- texlive-pstricks_calcnotes
-
