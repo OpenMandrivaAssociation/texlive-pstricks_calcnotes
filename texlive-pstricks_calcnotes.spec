@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-pstricks_calcnotes
 Version:	20131010
-Release:	5
+Release:	6
 Summary:	TeXLive pstricks_calcnotes package
 Group:		Publishing
 URL:		http://tug.org/texlive
