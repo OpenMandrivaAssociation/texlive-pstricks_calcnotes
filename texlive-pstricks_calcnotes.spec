@@ -1,7 +1,7 @@
 Name:		texlive-pstricks_calcnotes
 Epoch:		1
 Version:	34363
-Release:	1
+Release:	2
 Summary:	Use of PStricks in calculus lecture notes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/pstricks_calcnotes
