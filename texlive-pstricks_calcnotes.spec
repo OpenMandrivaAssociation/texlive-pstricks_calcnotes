@@ -4,7 +4,7 @@ Version:	34363
 Release:	2
 Summary:	Use of PStricks in calculus lecture notes
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/pstricks_calcnotes
+URL:		https://www.ctan.org/tex-archive/info/pstricks_calcnotes
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pstricks_calcnotes.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pstricks_calcnotes.doc.r%{version}.tar.xz
